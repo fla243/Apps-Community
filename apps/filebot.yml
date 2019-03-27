@@ -49,6 +49,7 @@
           - '/opt/appdata/{{pgrole}}:/config'
           - '/mnt:/storage'
           - '/etc/localtime:/etc/localtime:ro'
+          - '~/downloads/:/output:rw'
 
     - name: 'Setting PG ENV'
       set_fact:
