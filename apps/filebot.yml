@@ -29,9 +29,6 @@
     - name: 'Including plugins'
       include_tasks: '/opt/communityapps/apps/_plugins.yml'
 
-    - name: 'Including folders'
-      include_tasks: '/opt/communityapps/apps/_downloaders.yml'
-
     - name: 'Ini Check'
       stat:
         path: /opt/appdata/{{pgrole}}/core.conf
