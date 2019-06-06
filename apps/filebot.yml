@@ -59,7 +59,7 @@
 
     # BUILD CUSTOM IMAGE ##########################################################
     - name: 'Building modded {{pgrole}} image'
-      docker_image: >
+      docker_image:
           name: '{{image}}'
           path: templates/filebot
           state: present
