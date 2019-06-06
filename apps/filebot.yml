@@ -63,6 +63,9 @@
           name='{{image}}'
           path=templates/filebot
           state=present
+          build:
+            args:
+              - 'FILEBOT_VERSION:4.8.6'
 
     # COPY LICENSE FILE
     - name: 'Copy filebot license file'
