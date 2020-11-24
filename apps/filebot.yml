@@ -56,6 +56,7 @@
         pg_env:
           UID: '1000'
           GID: '1000'
+          FILEBOT_OPTS: '-javaagent:/config/FilebotCrack.jar'
 
     # BUILD CUSTOM IMAGE ##########################################################
     - name: 'Building modded {{pgrole}} image'
